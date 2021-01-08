@@ -38,11 +38,11 @@
 #menu::before {
     content: "";
     display: block;
+    transform-origin: left bottom;
     transform: rotate(0deg);
     left: 0;
     top: -20px;
-    transition: transform 250ms ease-in-out;
-
+    transition: transform 250ms linear;
 }
 
 #container:hover #menu::before {
@@ -58,7 +58,8 @@
     transform: rotate(0deg);
     left: 0;
     top: 20px;
-    transition: transform 250ms ease-in-out;
+    transform-origin: left top;
+    transition: transform 250ms linear;
 }
 
 #container:hover #menu::after {
